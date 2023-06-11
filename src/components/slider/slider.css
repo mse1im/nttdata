@@ -21,11 +21,23 @@
     object-fit: cover;
   }
 
+  .slider .swiper-pagination {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 0.3rem;
+    left: -10px !important;
+  }
+
   .swiper-pagination-bullet {
     border: 1px solid white;
     transform: scale(1) !important;
   }
 
   .swiper-pagination-bullet-active {
+    border: none;
+  }
+
+  .product-slider .swiper-pagination-bullet {
     border: none;
   }

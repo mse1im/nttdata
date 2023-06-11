@@ -7,8 +7,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '2rem',
-        lg: '0',
+        DEFAULT: '2rem'
       },
     },
     fontFamily: {

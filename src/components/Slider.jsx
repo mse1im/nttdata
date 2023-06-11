@@ -22,7 +22,7 @@ function Slider() {
           "--swiper-pagination-bullet-inactive-opacity": "1",
           "--swiper-pagination-bullet-size": "12px",
           "--swiper-pagination-bullet-horizontal-gap": "6px",
-          "--swiper-pagination-bottom": "15px",        
+          "--swiper-pagination-bottom": "15px",
         }}
       >
         <SwiperSlide><img src={slide01} alt="" /></SwiperSlide>

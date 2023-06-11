@@ -1,0 +1,34 @@
+.menu-container {
+    .menu-item {
+        position: relative;
+        transition-property: opacity;
+        transition-delay: 150ms;
+        transition-duration: 150ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #0059BC;
+            content:'';
+            left: 0;
+            bottom: -12px;
+            opacity: 0;
+            transition-property: opacity;
+            transition-delay: 150ms;
+            transition-duration: 150ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:hover, &.show {
+            &::after {
+                opacity: 1;
+                transition-property: opacity;
+                transition-delay: 150ms;
+                transition-duration: 150ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    }
+}
