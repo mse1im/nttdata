@@ -680,13 +680,12 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .mb-6{
@@ -729,12 +728,8 @@ video {
   margin-top: 32px;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
+.mt-4{
+  margin-top: 1rem;
 }
 
 .line-clamp-1{
@@ -871,6 +866,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-4{
@@ -1282,7 +1281,25 @@ video {
   }
 }
 
+@media (min-width: 640px){
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:items-center{
+    align-items: center;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1311,16 +1328,20 @@ video {
     width: 100%;
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:items-start{
     align-items: flex-start;
   }
 
-  .md\:justify-normal{
-    justify-content: normal;
+  .md\:items-center{
+    align-items: center;
   }
 
-  .md\:pt-0{
-    padding-top: 0px;
+  .md\:justify-normal{
+    justify-content: normal;
   }
 
   .md\:text-2xl{
